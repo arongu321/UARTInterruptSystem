@@ -12,8 +12,11 @@ To run this project, make sure to use Vivado 2019.1 as other versions of Vivado 
 2. Generate bitsream by clicking on **Generate Bitstream** in the **PROGRAM AND DEBUG** section in the **Flow Navigator**
 3. Export the hardware by clicking on **File ➞ Export ➞ Export Hardware**.
 <img width="637" alt="Screenshot 2024-04-04 at 4 23 04 PM" src="https://github.com/arongu321/UARTInterruptSystem/assets/67613556/5ec97c52-02fd-4315-8a53-f2235c3857a9">
-4. Start the Xilinx SDK by selecting **File ➞ Launch SDK**. The Xilinx SDK desktop window will now open
-and you must wait for the initialization process to finish.
+
+
+
+
+4. Start the Xilinx SDK by selecting **File ➞ Launch SDK**. The Xilinx SDK desktop window will now open and you must wait for the initialization process to finish.
 5. Create a new FreeRTOS project by clicking on **File ➞ New ➞ Application Project** in the Xilinx SDK window. Use on the Hello World template to create the new project.
 6. Establish a connection to the Zybo Z7 board by clicking on the + icon on the top border of the SDK Terminal window.
 7. On the popup window select the COM port on the PC to establish the connection from the micro-USB cable to the Zybo Z7 board. Leave other settings to their defaults.
