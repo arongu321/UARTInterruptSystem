@@ -1,10 +1,6 @@
 /*
- * uart_driver.c
- * Created on: July 27, 2021
- * Author: Shyama M. Gandhi
- * Modified by : Antonio Andara
- * Modified on : January 24, 2023
  * Implementation of UART driver functions declared in uart_driver.h
+ * Created by: Aron Gu, January 2024
  */
 
 #include "uart_driver.h"
