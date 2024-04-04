@@ -3,8 +3,6 @@
  * Created By: Aron Gu, January 2024
  */
 
-
-
 #include "stdio.h"
 #include "xgpio.h"
 #include "xil_printf.h"
