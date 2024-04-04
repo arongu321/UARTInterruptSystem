@@ -1,35 +1,8 @@
-/*	UART in Interrupt Mode
- *
- *	ECE 315		: Computer Interfacing
- *  Created on	: July 27, 2021
- *  Author	: Shyama M. Gandhi, Mazen Elbaz
- *  Modified by : Antonio Andara
- *  Modified on	: January 24, 2023
- *
- *     ------------------------------------------------------------------------------------------------------------------------------
- *
- *     This is the main file that uses the Xilinx the "uart_driver.h" header file.
- *     The final objective is to implement as interrupt mode receive side and polling mode on transmit side of the UART.
- *
- *     Inside the interrupt service routine in the uart_Driver.h file, the received bytes will be written at the back of receive queue. (xRxQueue)
- *     The bytes to be transmitted later on to UART console, will be read from the front of the front of the transmit queue. (xTxQueue)
- *
- *
- *     Overview of uart_driver.h file:
- *     This driver file is responsible for Initializing the UART, setting up the Interrupt System, Implements the ISR when a receive or sent event is triggered via UART,
- *     and implementing the four driver functions myReceiveData(), MyReceiveByte(), myTransmitFull() and MySendByte().
- *     You are suppose to add the code at the commented places in this uart_driver.h file.
- *     Please read the explanations carefully for your understanding.
- *
- *     Overview of this main source .c file:
- *     The driver file does all the background work and the queue implementation, which is hidden from the user in this driver file. Is the four functions myReceiveData(), MyReceiveByte(), myTransmitFull() and MySendByte(),
- *     that will be used to play around in this file.
- *     This file will also have the logic responsible for detecting the "\r#\r" and "\r%\r" termination sequence for displaying the interrupt statistics and resetting the variables respectively.
- *     It is in this file where students will enter the logic to change the letter capitalization.
- *     Please enter your code at the commented sections in this file too.
- *
- *     ------------------------------------------------------------------------------------------------------------------------------
+/*
+   UART Interrupt System
+ * Created By: Aron Gu, January 2024
  */
+
 
 
 #include "stdio.h"
